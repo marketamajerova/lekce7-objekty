@@ -7,8 +7,9 @@ let poleZvirat = [
     {jmeno: 'Pes', foto: 'obrazky/pes.jpg'}
 ]
 
-// Pridani cele farmy 
+let farma = document.querySelector('.farma');
 
+// Pridani cele farmy 
 poleZvirat.forEach(function(zvire, indx){
     zvire = document.createElement('div');
     zvire.className = 'zvire';
@@ -23,8 +24,6 @@ poleZvirat.forEach(function(zvire, indx){
 
     zvire.appendChild(fotoZvirete);
     zvire.appendChild(jmenoZvirete);
-
-    let farma = document.querySelector('.farma');
     
     farma.appendChild(zvire);
 })
